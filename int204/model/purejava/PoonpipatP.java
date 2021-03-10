@@ -1,27 +1,24 @@
-package int204.model.componentscan;
+package int204.model.purejava;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
-@Component("poon")
-@Scope("prototype")
-public class Poonpipatscan implements Injectionscan {
-	@Value("Boss") String suvanarawat ;
-	 int august;
+
+public class PoonpipatP implements InjectionP {
+	String suvanarawat;
+	int august;
 	
 	
 	
-	public Poonpipatscan() {
+	 public PoonpipatP() {
 		
 	}
 
-	public Poonpipatscan(String suvanarawat, int august) {
+	public PoonpipatP(String suvanarawat, int august) {
 		
 		this.suvanarawat = suvanarawat;
 		this.august = august;
 	}
 
-	 public void setSuvanarawat(String suvanarawat) {
+	@Value("Boss") public void setSuvanarawat(String suvanarawat) {
 		this.suvanarawat = suvanarawat;
 	}
 

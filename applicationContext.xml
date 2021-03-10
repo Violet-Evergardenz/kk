@@ -9,7 +9,7 @@
 	
 	<bean id="me" class="int204.model.Poonpipat" scope="prototype">
 		<property name="suvanarawat" value="Boss"></property>
-		<property name="august" value="130"></property>
+		<property name="august"  value="130"></property>
 		
 	</bean>
 	

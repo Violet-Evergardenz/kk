@@ -10,30 +10,30 @@ import org.springframework.stereotype.Component;
 @Scope("singleton")
 public class Suvanarawatscann implements Injectionscan{
 	
-	@Autowired @Qualifier("poon") Poonpipatscan p;
+	 Poonpipatscan poon;
 	
 	
 	
 	public Suvanarawatscann() {
 		
 	}
-
-	public Suvanarawatscann(Poonpipatscan p) {
+@Autowired 
+	public Suvanarawatscann( Poonpipatscan poon) {
 		
-		this.p = p;
+		this.poon = poon;
 	}
 
 	
 	@Override
 	public String getHead() {
 		// TODO Auto-generated method stub
-		return this.p.getHead();
+		return this.poon.getHead();
 	}
 
 	@Override
 	public int getTail() {
 		// TODO Auto-generated method stub
-		return this.p.getHead().length();
+		return this.poon.getHead().length();
 	}
 
 }
